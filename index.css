@@ -17,10 +17,13 @@ body {
   align-items: center;
   background-color: #e0dedef3;
   /* background-color: yellow; */
+  padding-bottom: 25rem;
+  
 
   wrapper {
     background-color: rgba(248, 247, 247, 0.968);
     max-width: 1000px;
+   
   }
 }
 
@@ -53,12 +56,11 @@ nav {
 nav,
 h1 {
   font-family: "Maven Pro", sans-serif;
-        color: var(--green);
-
+  color: var(--green);
 }
 
 h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .grid-container {
@@ -72,9 +74,13 @@ h1 {
 .grid-item {
   background-color: #2d7d2f51;
   border: #333 solid;
-  /* color: white; */
   padding: 20px;
   text-align: center;
+
+  /* One section layout */
+  &.col-1 {
+    grid-column: span 6;
+  }
 
   /* Two section layouts */
   &.col-1-6 {
@@ -82,10 +88,14 @@ h1 {
   }
   &.col-1-4 {
     grid-column: 1 / 4;
-    grid-row: 1/8;
   }
   &.col-4-6 {
     grid-column: 4 / 7;
+  }
+
+  &.full-height{
+    grid-row: 1 / 8; 
+
   }
   &.raw-1-4 {
     grid-row: 1/4;
@@ -93,24 +103,34 @@ h1 {
   &.raw-5-8 {
     grid-row: 5/8;
   }
+}
 
-  /* Three-section layouts */
-  &.card {
-    
+/* Three-section layouts */
+.cards {
+  .card {
+    grid-column: span 2;
+    grid-row: span 6;
+
   }
-
 }
 .article-text {
-    text-align: left;
-    /* padding: 0; */
+  text-align: left;
+  /* padding: 0; */
 
-    #sa-tips{        
-        background-color: aqua;
-        float: right; 
-        margin: 10px; 
-    }
+  #sa-tips {
+    background-color: aqua;
+    float: right;
+    margin: 10px;
+  }
 }
 
 footer {
   text-align: center;
 }
+
+.footer-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1.5fr);
+    background-color: brown;
+  
+  }
