@@ -1,0 +1,116 @@
+/* General COLOURS, FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  --green: #0a846e;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0dedef3;
+  /* background-color: yellow; */
+
+  wrapper {
+    background-color: rgba(248, 247, 247, 0.968);
+    max-width: 1000px;
+  }
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    li {
+      display: inline;
+      margin-right: 10px;
+
+      a {
+        text-decoration: none;
+        color: var(--green);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+nav,
+h1 {
+  font-family: "Maven Pro", sans-serif;
+        color: var(--green);
+
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.grid-container {
+  /* height: max-content; */
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* WEBSITE CARDS */
+.grid-item {
+  background-color: #2d7d2f51;
+  border: #333 solid;
+  /* color: white; */
+  padding: 20px;
+  text-align: center;
+
+  /* Two section layouts */
+  &.col-1-6 {
+    grid-column: 1 / 7;
+  }
+  &.col-1-4 {
+    grid-column: 1 / 4;
+    grid-row: 1/8;
+  }
+  &.col-4-6 {
+    grid-column: 4 / 7;
+  }
+  &.raw-1-4 {
+    grid-row: 1/4;
+  }
+  &.raw-5-8 {
+    grid-row: 5/8;
+  }
+
+  /* Three-section layouts */
+  &.card {
+    
+  }
+
+}
+.article-text {
+    text-align: left;
+    /* padding: 0; */
+
+    #sa-tips{        
+        background-color: aqua;
+        float: right; 
+        margin: 10px; 
+    }
+}
+
+footer {
+  text-align: center;
+}
