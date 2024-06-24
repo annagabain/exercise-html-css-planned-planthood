@@ -50,22 +50,23 @@
         font-weight: bold;
         z-index: 2;
 
-        img {
-            width: 3rem;
-        }
     }
 
-    .card-content-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .bin {
+    #bin {
         filter: invert(55%) sepia(100%) saturate(468%) hue-rotate(310deg) brightness(70%) contrast(92%);
         display: block;
-        height: 5px;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        font-weight: bold;
+        z-index: 5;
+
+
     }
+
+
+
+
 
 
     #season,
