@@ -52,7 +52,7 @@ nav {
     }
 }
 
-#mobile {
+#mobile, .bin {
 display: none;
 }
 
@@ -164,7 +164,16 @@ main {
     }
 
     .card-content {
-        padding: 20px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-content-left{
+        text-align: left;
+    }
+    .card-content-right{
+        text-align: right;
     }
 
     .card-button {
