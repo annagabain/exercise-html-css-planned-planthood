@@ -14,18 +14,21 @@
             <li><a href="#">PLANER</a></li>
             <li><a href="#">HISTORIK</a></li>
             <li><a href="#">TIPS</a></li>
-            <li><a href="#">LOGGA IN</a></li>
+            <li><a href="#">LOGGA UT</a></li>
           </ul>
         </nav>
-        <hero class="grid-container">
-          <article class="grid-item col-1 full-height">Mina Sidor</article>
+        <hero class="page-two-hero">
+          <section class="grid-container page-two-hero-image">
+            <article class="grid-item">
+              <img class="page-two-svg-overlay" src="assets/Logo.svg" />
+              <h2>Mina sidor</h2>
+            </article>
+          </section>
         </hero>
       </header>
 
       <main>
-
         <section class="grid-container">
-
           <article class="grid-item col-1-4">
             <h2>Lägg till ny plantering:</h2>
           </article>
@@ -35,15 +38,14 @@
             <input type="text" id="planta" name="planta" />
           </article>
 
-          <article class="grid-item col-4-6">  
+          <article class="grid-item col-4-6">
             <label for="datum">Datum:</label>
-            <input type="text" id="datum" name="datum">
+            <input type="text" id="datum" name="datum" />
           </article>
 
           <article class="grid-item col-1">
             <button id="sa-tips">LAGG TILL</button>
           </article>
-
         </section>
 
         <hr />
@@ -52,14 +54,55 @@
           <article class="grid-item col-1-6">
             <h2>Dina planerade planteringar:</h2>
           </article>
-          <article class="grid-item card">Card 1</article>
+          <!-- CARD SOLO -->
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\photo-1518568403628-df55701ade9e.avif"
+              alt="cucumber"
+            />
+            <section class="card-content">
+              <h3>Gurka</h3>
+              <p class="card-description">Rico Coolio.</p>
+              <p>15 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
         </section>
         <section class="grid-container cards">
           <article class="grid-item col-1-6">
             <h2>Dina planerade planteringar:</h2>
           </article>
-          <article class="grid-item card">Card 1</article>
-          <article class="grid-item card">Card 2</article>
+
+          <!-- CARD 1 -->
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\photo-1518568403628-df55701ade9e.avif"
+              alt="cucumber"
+            />
+            <section class="card-content">
+              <h3>Gurka</h3>
+              <p class="card-description">Rico Coolio.</p>
+              <p>15 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\photo-1518568403628-df55701ade9e.avif"
+              alt="cucumber"
+            />
+            <section class="card-content">
+              <h3>Gurka</h3>
+              <p class="card-description">Rico Coolio.</p>
+              <p>15 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
         </section>
 
         <hr />
@@ -75,6 +118,5 @@
         <p>Till toppen av sidan</p>
       </footer>
     </wrapper>
-    
   </body>
 </html>
