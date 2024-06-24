@@ -52,6 +52,10 @@ nav {
     }
 }
 
+#mobile {
+display: none;
+}
+
 nav,
 h1 {
     font-family: "Maven Pro", sans-serif;
@@ -336,3 +340,5 @@ footer,
     margin: 0;
     text-align: center;
 }
+
+
