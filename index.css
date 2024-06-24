@@ -300,5 +300,24 @@ footer,
 .footer-two {
   display: grid;
   grid-template-columns: repeat(4, 1.5fr);
-  background-color: brown;
+  background-color: var(--brown);
+  padding: 2rem 2rem 0;
+
+
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+  }
+
+
 }
+
+.footer-two-bottom-text {
+    grid-row: 2;
+    background-color: #ffffff;
+    grid-column: span 7;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+  }
