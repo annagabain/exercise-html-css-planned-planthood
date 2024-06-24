@@ -10,12 +10,14 @@
     <wrapper>
       <header>
         <hero class="grid-container">
-          <article class="grid-item col-1-4 full-height">Hero hand</article>
-          <article class="grid-item col-4-6 raw-1-4">
-            Hero plant right-top
+          <article id="hero-hand" class="grid-item col-1-4 full-height">
+            <img src="assets/Logo.svg" />
           </article>
-          <article class="grid-item col-4-6 raw-5-8">
-            Hero shovel right-bottom
+          <article class="grid-item col-4-6 raw-1-4 brown-background">
+            <img src="assets\seedling.svg" />
+          </article>
+          <article class="grid-item col-4-6 raw-5-8 green-background">
+            <img src="assets\dig.svg" />
           </article>
         </hero>
         <nav>
@@ -33,7 +35,11 @@
           <h1>Planned Planthood</h1>
         </article>
         <section class="grid-container">
-          <article class="grid-item col-1-4">soil image</article>
+          <article
+            class="grid-item col-1-4 green-background article-image circle circle-left"
+          >
+            <img src="assets\Vectorseedpackage.svg" />
+          </article>
           <article class="grid-item col-4-6 article-text">
             <h2>Säsong att så</h2>
             <p>
@@ -41,25 +47,103 @@
               consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet
               netus amet eu elit.
             </p>
-            <button id="sa-tips">SÅ-TIPS</button>
+            <button class="button-right">SÅ-TIPS</button>
           </article>
         </section>
 
-        <hr />
+        <hr class="divider-line" />
 
         <section class="grid-container cards">
           <article class="grid-item col-1-6">
             <h2>Våra planerade planteringar:</h2>
           </article>
-          <article class="grid-item card">Card 1</article>
-          <article class="grid-item card">Card 2</article>
-          <article class="grid-item card">Card 3</article>
-          <article class="grid-item card">Card 4</article>
-          <article class="grid-item card">Card 5</article>
-          <article class="grid-item card">Card 6</article>
+
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\photo-1518568403628-df55701ade9e.avif"
+              alt="cucumber"
+            />
+            <section class="card-content">
+              <h3>Gurka</h3>
+              <p class="card-description">Rico Coolio.</p>
+              <p>15 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
+
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\justus-menke-zRqRhIJqdnI-unsplash.jpg"
+              alt="tomato"
+            />
+            <section class="card-content">
+              <h3>Tomat</h3>
+              <p class="card-description">Jocke</p>
+              <p>1 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
+
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\tristan-gevaux-HnawKfg0u8M-unsplash.jpg"
+              alt="tomatoes"
+            />
+            <section class="card-content">
+              <h3>Tomat</h3>
+              <p class="card-description">Majvor och P-Å</p>
+              <p>1 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
+
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\michelle-tresemer-DW-iZYLjYco-unsplash.jpg"
+              alt="green peas"
+            />
+            <section class="card-content">
+              <h3>Sockerärtor</h3>
+              <p class="card-description">Frippe</p>
+              <p>15 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
+
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\photo-1555447740-03e40562af94.avif"
+              alt="green peas"
+            />
+            <section class="card-content">
+              <h3>Majrova</h3>
+              <p class="card-description">Emma på 4an</p>
+              <p>1 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
+
+          <article class="grid-item card">
+            <img class="svg-overlay" src="assets\plant.svg" alt="plant" />
+            <img
+              src="assets\images\photo-1627989230968-d0b8e2d1a398.avif"
+              alt="squash"
+            />
+            <section class="card-content">
+              <h3>Squash</h3>
+              <p class="card-description">Perra J</p>
+              <p>15 april 2024</p>
+              <button class="card-button">TA BORT</button>
+            </section>
+          </article>
         </section>
 
-        <hr />
+        <button>Visa fler</button>
 
         <section class="grid-container">
           <article class="grid-item col-1-4 article-text">
@@ -69,17 +153,26 @@
               consectetur. Sit venenatis arcu nunc consectetur neque. Vel amet
               netus amet eu elit.
             </p>
-            <button>Planterade plantor</button>
+            <button class="button-left">Planterade plantor</button>
           </article>
-          <article class="grid-item col-4-6">soil image</article>
+          <article
+            class="grid-item col-4-6 green-background circle circle-right"
+          >
+            <img src="assets\plant.svg" />
+          </article>
         </section>
-        <hr />
       </main>
 
       <footer>
-        <section class="grid-container">
-          <article class="grid-item col-1-4 raw-1-4">Vi hörs!</article>
-          <article class="grid-item col-4-6 raw-1-4">Hand and heart</article>
+        <section class="grid-container footer-image">
+          <article class="grid-item col-1-4 footer-left">
+            <h3>Vi hörs!</h3>
+            <p>0701-234567</p>
+            <p>mail@mail.se</p>
+          </article>
+          <article class="grid-item col-4-6">
+            <img class="svg-overlay" src="assets/Logo.svg" />
+          </article>
         </section>
         <p>Till toppen av sidan</p>
       </footer>
