@@ -11,7 +11,12 @@
   <body>
     <wrapper>
       <header>
-        <nav>
+        <nav id="mobile">
+          ==
+
+          
+        </nav>
+        <nav id="desktop">
           <ul>
             <li><a href="#">PLANER</a></li>
             <li><a href="#">HISTORIK</a></li>
@@ -31,18 +36,18 @@
 
       <main>
         <section class="grid-container">
-          <article class="grid-item col-1-4">
-            <h2 class="add-new-plants">Lägg till ny plantering:</h2>
+          <article id="add-new-plants-title"  class="grid-item col-1-4">
+            <h2>Lägg till ny plantering:</h2>
           </article>
 
-          <article class="grid-item col-1-4">
+          <article id="planta-input"  class="grid-item col-1-4">
             <div class="add-new-plants">
               <label for="planta">Planta:</label>
               <input type="text" id="planta" name="planta" />
             </div>
           </article>
 
-          <article class="grid-item col-4-6">
+          <article  id="datum-input" class="grid-item col-4-6">
             <div class="add-new-plants">
 
             <label for="datum">Datum:</label>

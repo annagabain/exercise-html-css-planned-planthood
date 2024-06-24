@@ -1,5 +1,10 @@
 /* Media Queries for iPhone 13-14 */
 @media only screen and (max-width: 430px) {
+
+    main {
+        padding: 0.2rem;
+    }
+
     #hero-hand {
         grid-column: 1 / 7;
 
@@ -9,6 +14,11 @@
             object-fit: cover;
             padding: 5rem;
         }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: large;
     }
 
     #seedling {
@@ -22,7 +32,7 @@
     }
 
     #desktop {
-        visibility: hidden;
+        display: none;
     }
 
     #mobile {
@@ -34,6 +44,7 @@
         color: red;
         padding: 10px;
         font-weight: bold;
+        z-index: 2;
     }
 
 
@@ -88,4 +99,67 @@
         grid-column: 1/7;
         grid-row: 2;
     }
+
+    .page-two-hero {
+        .page-two-hero-image {
+            height: 17rem;
+        }
+
+        .page-two-svg-overlay {
+            top: 50%;
+            width: 50%;
+        }
+
+
+    }
+
+    .page-two-hero h2 {
+        font-size: larger;
+        color: white;
+        top: 80%;
+        left: 35%;
+    }
+
+
+
+    #add-new-plants-title {
+        grid-column: span 6;
+
+        h2 {
+            text-align: center;
+            font-size: large;
+        }
+    }
+
+    #planta-input,
+    #datum-input {
+        grid-column: span 6;
+
+    }
+
+    #planta,
+    #datum {
+        margin: 0;
+    }
+
+    #datum {
+        margin-bottom: 1rem;
+    }
+
+    .footer-two {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0.5rem 0.5rem 0;
+        gap: 0.5rem;
+        padding: 0.5rem;
+
+        img {
+            height: min-content;
+            max-height: 6rem;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
 }
